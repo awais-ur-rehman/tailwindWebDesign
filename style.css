@@ -950,6 +950,10 @@ video {
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -1909,38 +1913,6 @@ video {
   background-color: rgb(171 122 87 / 0.3);
 }
 
-.bg-contactFood {
-  background-image: url('/images/contactFood.jpg');
-}
-
-.bg-food1 {
-  background-image: url('/images/food1.jpg');
-}
-
-.bg-food2 {
-  background-image: url('/images/food2.jpg');
-}
-
-.bg-food3 {
-  background-image: url('/images/food3.jpg');
-}
-
-.bg-food4 {
-  background-image: url('/images/food4.jpg');
-}
-
-.bg-foodHome {
-  background-image: url('/images/foodHome.jpg');
-}
-
-.bg-resturant1 {
-  background-image: url('/images/resturant1.jpg');
-}
-
-.bg-resturant2 {
-  background-image: url('/images/resturant2.jpg');
-}
-
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1959,10 +1931,6 @@ video {
 .box-decoration-clone {
   -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
-}
-
-.bg-cover {
-  background-size: cover;
 }
 
 .bg-fixed {
@@ -1992,10 +1960,6 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.bg-center {
-  background-position: center;
 }
 
 .bg-repeat {
@@ -2819,3 +2783,5 @@ video {
     }
   }
 }
+
+  
