@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet">
+    
+    <title>Travel</title>
+</head>
+<style>
+    .inbetween {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(50%);
+        width: 100%;
+    }
+
+    .inbetween input {
+        width: 80%;
+    }
+</style>
+
+<body class="overflow-y-scroll no-scrollbar">
+    <div class="h-32 w-full bg-transparent flex justify-between z-30 absolute" id="navbar">
+        <div class="h-full w-1/2 flex items-center ps-6">
+            <h1 class="text-4xl text-white"><span class="text-blue-900">T</span>ravel</h1>
+        </div>
+        <div class="h-full w-1/2 flex items-center justify-end space-x-12 pe-8">
+            <ul class="text-white text-xl flex space-x-6 cursor-pointer">
+                <li class="hover:text-blue-900">About</li>
+                <li class="hover:text-blue-900">Gallery</li>
+                <li class="hover:text-blue-900">Travel With Us</li>
+            </ul>
+            <button
+                class="h-14 w-32 bg-transparent text-white text-xl rounded-full border-2 border-white hover:bg-blue-900 duration-150">Book
+                Now</button>
+        </div>
+    </div>
+
+    <!-- home -->
+    <div class="h-screen bg-landingPage bg-cover bg-fixed flex">
+        <div class="h-full w-1/2 ps-4 space-y-4 pt-40 items-center bg-cloud bg-contain bg-no-repeat bg-center">
+            <h1 class="text-6xl text-blue-900 items-center">Be Prepared For The Mountains And Beyond!</h1>
+            <p class="text-sm text-gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sapiente
+                fugiat repellendus rerum beatae consequuntur a quo. Quasi quaerat nulla recusandae repellat. Omnis
+                excepturi enim nulla delectus eum laborum a.</p>
+        </div>
+        <div class="h-full w-1/2 flex justify-end items-center pe-8 bg-cloud bg-contain bg-no-repeat bg-right-bottom">
+            <div class="rotate-90 space-x-4">
+                <i class="fa-brands fa-instagram text-2xl text-pink-700"></i>
+                <i class="fa-brands fa-facebook text-2xl text-blue-500"></i>
+                <i class="fa-brands fa-pinterest text-2xl text-red-600"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- searchbar -->
+    <div class="h-12 z-10 inbetween">
+        <div class="h-full  bg-transparent flex justify-center items-center space-x-4">
+            <div class="bg-blue-900 h-full w-12 rounded-full flex items-center justify-center">
+
+            </div>
+            <input type="text" placeholder="Search Place"
+                class="w-8/12 bg-blue-100 ps-4 rounded-full h-full border-2 border-white">
+            <div class="bg-blue-900 h-full w-12 rounded-full flex items-center justify-center">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="h-screen backdrop-blur-sm bg-blue-900 flex justify-center items-center bg-hotair bg-contain bg-fixed">
+        <div class="h-96 w-10/12 flex justify-center items-center space-x-10">
+            <div class="h-full w-4/12 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px]">
+                <img src="images/travellingagency.jpg" alt="about" class="object-cover h-full w-full">
+            </div>
+            <div class="h-2/4 w-4/12 space-y-6">
+                <h1 class="text-white text-4xl">About <span class="text-blue-100">us</span></h1>
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quibusdam sint,
+                    rem
+                    facere architecto quas deleniti ea dolore nesciunt quis inventore exercitationem fugit asperiores
+                    corrupti ipsa consectetur perferendis laudantium velit.</p>
+                <button
+                    class="h-14 w-32 bg-transparent text-white text-xl rounded-full border-2 border-white hover:bg-blue-300 duration-150">Read
+                    More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- book Now -->
+
+    <div class="h-80 backdrop-blur-lg bg-blue-100 flex justify-center items-center">
+        <h1 class="text-6xl text-black font-extralight">
+            <hr> BOOK YOUR TICKET NOW
+            <hr>
+        </h1>
+    </div>
+
+    <!-- gallery -->
+    <div class="h-screen backdrop-blur-sm bg-blue-900 flex justify-center items-center bg-hotair bg-contain bg-fixed">
+        <div class="h-4/5 w-10/12 flex justify-center items-center space-x-16">
+            <div class="card h-4/5 w-3/12 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card1
+                transition transform scale-80 hover:scale-100 duration-300">
+                <div class="h-4/5 w-full bg-boating bg-cover"></div>
+                <div class="h-1/4 w-full flex items-center justify-center bg-blue-900">
+                    <h1 class="text-2xl text-white">lorem</h1>
+                </div>
+            </div>
+            <div class="card h-4/5 w-3/12 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card2
+                transition transform scale-80 hover:scale-100 duration-300">
+                <div class="h-4/5 w-full bg-lake bg-cover"></div>
+                <div class="h-1/4 w-full flex items-center justify-center bg-blue-900">
+                    <h1 class="text-2xl text-white">lorem</h1>
+                </div>
+            </div>
+            <div class="card h-4/5 w-3/12 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] card3
+                transition transform scale-80 hover:scale-100 duration-300">
+                <div class="h-4/5 w-full bg-bridge bg-cover"></div>
+                <div class="h-1/4 w-full flex items-center justify-center bg-blue-900">
+                    <h1 class="text-2xl text-white">lorem</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- travel with us -->
+    <div class="h-screen bg-blue-900">
+        <div class="h-full bg-blue-200 rounded-t-3xl flex items-center justify-end pe-20">
+            <div class="h-96 w-80 bg-blue-200 shadow-[rgba(0,_0,_0,_0.4)_0px_30px_90px] rounded-3xl items-center text-center space-y-6 py-8 px-4">
+                <h1 class="text-black font-extralight text-4xl">REACH US</h1>
+                <p class="text-sm text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem tempore id, alias quasi.</p>
+                <hr class="text-yellow w-48 flex m-auto">
+                <div>
+                    <i class="fa-solid fa-phone text-2xl text-blue-900"><a href="#" class="text-sm text-black font-extralight">03445123196</a></i><br>
+                    <i class="fa-solid fa-envelope text-2xl text-blue-900"><a href="#" class="text-sm text-black font-extralight">travel@example.com</a></i><br>
+                    <i class="fa-solid fa-map-location-dot text-2xl text-blue-900"><a href="#" class="text-sm text-black font-extralight">Mirpur, Azad Kashmir</a></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
